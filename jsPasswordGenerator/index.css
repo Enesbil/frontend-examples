@@ -1,0 +1,82 @@
+
+
+.karla-bold {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: bold;
+  color: white;
+}
+
+.inter-light {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: bold;
+  color: #D5D4D8;
+}
+span{
+    color: #10B981;
+}
+body {
+    margin: 0;
+    background-color: #1F2937;
+}
+
+#hero{
+    width: 550px;
+    height: 550px;
+    padding: 115px 52px;
+    box-sizing: border-box;
+    
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: getfromgooglefonts;
+}
+h2{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: getfromgooglefonts;
+}
+button{
+    margin-top: 51px;
+    margin-bottom: 44px;
+    box-sizing: border-box;
+    padding: 9px 17px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    width: 191px;
+    height: 42px;
+    color: white;
+    background-color: #10B981;
+}
+.resultBlock{
+    display: inline;
+}
+
+hr{
+    border-color: #2F3E53;
+    margin-bottom: 44px;
+}
+
+#resultSection{
+    display: flex;
+    justify-content: space-between;
+    color: #55F991;
+    text-align: center;
+}
+.resultBlock{
+    box-sizing: border-box;
+    background-color: #273549;
+    width: 211px;
+    height: 39px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
