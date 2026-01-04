@@ -17,9 +17,9 @@ convertBtn.addEventListener("click", function convert() {
     const length = (Number(inputVal) * 3.281).toFixed(3)
     const volume = (Number(inputVal) * 0.264).toFixed(3)
     const mass = (Number(inputVal) * 2.204).toFixed(3)
-    lengthDiv.innerHTML = `<h3>${length} feet</h3>`
-    volumeDiv.innerHTML = `<h3>${volume} gallons</h3>`
-    massDiv.innerHTML = `<h3>${mass} pounds</h3>` 
+    lengthDiv.innerHTML = `<h2>${length} feet</h2>`
+    volumeDiv.innerHTML = `<h2>${volume} gallons</h2>`
+    massDiv.innerHTML = `<h2>${mass} pounds</h2>` 
 }})
 
 
