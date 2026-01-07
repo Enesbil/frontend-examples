@@ -1,6 +1,5 @@
 html, body {
     margin: 0;
-    padding: 0;
 }
 
 body{
@@ -33,7 +32,6 @@ header{
 }
 
 .post-body{
-    height: 545px;
     background-color: #ffffff;
     margin-bottom: 25px;
     margin-top: 0px;
@@ -108,6 +106,6 @@ header{
     font-weight: 400;
     font-size: 13px;
     margin-top: 0;
-    margin-bottom: 14px;
+    padding-bottom: 15px;    
 }
 
