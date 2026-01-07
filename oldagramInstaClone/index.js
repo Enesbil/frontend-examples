@@ -29,10 +29,10 @@ const posts = [
 ]
 
 const body = document.querySelector("body")
-
+let myStr = ""
 function renderPosts(arr){
     for(let i = 0; i < arr.length; i ++){
-        body.innerHTML += `        
+        myStr += `        
             <section class="post-body">
                 <div class="post-header">
                     <img class ="poster-icon" alt="O.P. icon" src=${arr[i].avatar}>
@@ -53,6 +53,7 @@ function renderPosts(arr){
                 </div>
             </section>`
     }
+    body.innerHTML += myStr
 }
 
 renderPosts(posts)
