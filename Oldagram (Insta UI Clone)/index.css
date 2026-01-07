@@ -3,3 +3,111 @@ html, body {
     padding: 0;
 }
 
+body{
+    width: 375px;
+    background-color: #C6C6C6;
+    font-family: 'Source Sans 3', sans;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #ffffff;
+    border-bottom: 1px solid #C6C6C6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 67px;
+}
+
+.logo{
+    width: 127px;
+    object-fit: contain;
+    margin-left: 15px;
+}
+
+.user-icon{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.post-body{
+    height: 545px;
+    background-color: #ffffff;
+    margin-bottom: 25px;
+    margin-top: 0px;
+}
+.post-header{
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+.op-info{
+    height: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 7px;
+
+}
+.poster-icon{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.op-info p{
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+}
+.op-name{
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 1px;
+}
+.op-location{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.post-image{
+    height: 375px;
+    width: 375px;
+}
+
+.post-cta{
+    margin-top: 21px;
+    margin-left: 10px;
+    width: 104px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.cta-icon{
+    height: 23px;
+    width: 23px;
+}
+
+.post-bottom{
+    margin-top: 12px;
+    margin-left: 13px;
+}
+
+.bottom-bold {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.bottom-regular {
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
