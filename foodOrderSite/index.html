@@ -1,12 +1,95 @@
+<!DOCTYPE html>
 <html>
     <head>
-       <link rel="stylesheet" href="index.css">
-       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <meta charset="UTF-8">
+        <title>Jimmy's Diner</title>
+        <link rel="stylesheet" href="index.css">
+        <!-- GOOGLE FONTS SMYTHE AND INTER-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-	<script src="index.js" type="module"></script>
+        <div class="container">
+            <!-- Header -->
+            <header class="header">
+                <h1 class="header-title">Jimmy's Diner</h1>
+                <p class="header-subtitle">The best burgers and pizzas in town.</p>
+            </header>
+
+            <!-- Menu Items -->
+            <main class="menu" id="menu">
+                <!-- Menu items will be rendered here by JS -->
+            </main>
+
+            <!-- Order Section (hidden by default) -->
+            <section class="order-section" id="order-section">                
+                <div class="order-items" id="order-items">
+                    <!-- Order items will be rendered here by JS -->
+                </div>
+                
+            </section>
+            <!-- ORDER SUMMARY SECTION INVISIBLE BY DEFAULT-->
+            <section class="order-summary">
+                <h2 class="order-title">Your order</h2>
+                <div class="ordered-items">
+                    
+                </div>
+                <hr class="order-divider">
+                <div class="ordered-item">
+                    <p class="ordered-item-name">Total price:</p>
+                    <p class="ordered-items-total-price ordered-item-price">$</p>
+                </div>
+                <!-- This button also invisible by default but added once in js loop -->
+                <button class="complete-order-btn" id="complete-order-btn">Complete order</button>
+            </section>
+
+            <!-- Payment Modal (hidden by default) -->
+            <div class="modal-overlay" id="modal-overlay">
+                <div class="modal">
+                    <h2 class="modal-title">Enter card details</h2>
+                    <form class="modal-form" id="payment-form">
+                        <input type="text" class="modal-input" id="name-input" placeholder="Enter your name" required>
+                        <input type="text" class="modal-input" id="card-input" placeholder="Enter card number" required>
+                        <input type="text" class="modal-input" id="cvv-input" placeholder="Enter CVV" required>
+                        <button type="submit" class="modal-pay-btn">Pay</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Order Complete Message (hidden by default) -->
+            <div class="order-complete" id="order-complete">
+                <p class="order-complete-message">Thanks, <span id="customer-name">James</span>! Your order is on its way!</p>
+            </div>
+        </div>
+        
+        <script src="index.js" type="module"></script>
     </body>
 </html>
 
+<!--
+=== JS TEMPLATES ===
+
+MENU ITEM TEMPLATE:
+<div class="menu-item" data-id="${id}">
+    <img src="assets/${name.toLowerCase()}-graphic.png" alt="${name}" class="menu-item-img">
+    <div class="menu-item-details">
+        <h2 class="menu-item-name">${name}</h2>
+        <p class="menu-item-ingredients">${ingredients.join(', ')}</p>
+        <p class="menu-item-price">$${price}</p>
+    </div>
+    <button class="menu-item-add-btn" data-id="${id}">+</button>
+</div>
+<hr class="menu-divider">
+
+ORDER ITEM TEMPLATE:
+<div class="order-item" data-id="${id}">
+    <span class="order-item-name">${name}</span>
+    <span class="order-item-remove" data-id="${id}">remove</span>
+    <span class="order-item-price">$${price}</span>
+</div>
+
+-->

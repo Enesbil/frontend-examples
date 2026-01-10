@@ -1,0 +1,1 @@
+A simple interactive diner webpage pulling content from data.js with basic state handling. 
