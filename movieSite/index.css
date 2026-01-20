@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    font-weight: bold;
+    background-image: url('assets/header-bg.png');
+    Background-size: cover;
+    background-position: center;
+}
