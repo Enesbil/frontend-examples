@@ -2,24 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyMovies</title>
 </head>
 <body>
     <header>
         <ul>
-            <li><i data-lucide="search"></i><h1>Find your film</h1></li>
+            <li><h1>Find your film</h1></li>
             <li><i data-lucide="list"></i></li>
         </ul>
     </header>
-    <section>
-        <div class="search-bar">
-
-            <input type="text" placeholder="Search for a movie">
-            <button>Search</button>
-        </div>
+    <section class="search">
+            <form class="search-bar">
+                <button type="submit"><i class="search-icon" data-lucide="search"></i></button>
+                <input type="text" class="search-input" placeholder="Search for a movie">
+            </form>
     </section>
     <main>
+
         <div class="movie-area-initial">
             <ul>
                 <li><i data-lucide="film"></i></li>
@@ -32,5 +33,6 @@
     <script>
     lucide.createIcons();
     </script>
+    <script src="index.js" type="module"></script>
 </body>
 </html>
